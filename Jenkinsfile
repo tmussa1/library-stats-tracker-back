@@ -19,7 +19,7 @@ pipeline {
 
           stage('deployment stage') {
               steps {
-                bat "cf login -a http://api.run.pivotal.io -u gguzman@g.harvard.edu -p Harvard.Summer.2020"
+                bat "cf login -a http://api.run.pivotal.io -u gguzman@g.harvard.edu -p ReginaAdmin1805$"
 				bat "cf target -o hypercode -s development"	
 				bat "cf push LibStatsHelper"
         }
