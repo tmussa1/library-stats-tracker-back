@@ -21,7 +21,7 @@ pipeline {
               steps {
                 bat "cf login -a http://api.run.pivotal.io -u gguzman@g.harvard.edu -p ReginaAdmin1805."
 				bat "cf target -o hypercode -s development"	
-				bat "cf push LibStatsHelper"
+				bat "cf push -p target\LibStatsHelper-0.0.1-SNAPSHOT.jar"
         }
     }
 
